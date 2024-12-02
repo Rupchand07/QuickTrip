@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Quick Trip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="google_maps_key">AIzaSyBzdmO5kvwrHzrA-jj76tEFUT_zEd5ygcE</string>
+    <string-array name="seats_array">
+        <item>1 Seat</item>
+        <item>2 Seats</item>
+        <item>3 Seats</item>
+        <item>4 Seats</item>
+    </string-array>
+
+
+</resources>

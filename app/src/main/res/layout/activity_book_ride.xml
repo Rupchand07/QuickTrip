@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <ImageView
+        android:id="@+id/backBtnBookRide"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRideSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_below="@id/backBtnBookRide">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ride Details"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvRideDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chittoor ➝ Mysore"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvRideDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure: Monday, 3:00 PM"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvAvailableSeats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seats Available: 3"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPassengerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_below="@id/cardRideSummary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvPassengerDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passenger Details"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor" />
+
+            <TextView
+                android:id="@+id/tvPassengerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Rup"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvPassengerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: 9876543210"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvPassengerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: rup@gmail.com"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSelectSeats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_below="@id/cardPassengerInfo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvSelectSeats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Seats"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor" />
+
+            <Spinner
+                android:id="@+id/spinnerSeats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:entries="@array/seats_array" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPaymentInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_below="@id/cardSelectSeats">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvPaymentDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Information"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor" />
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount: Rs.200"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnProceedToPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed to Payment"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/primaryColor"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

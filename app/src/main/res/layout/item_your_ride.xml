@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/lightBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvRideRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route: Chittoor ➝ Mysore"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvDepartureTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure: Monday, 3:00 PM"
+            android:textSize="14sp"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/tvSeatsBooked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seats Booked: 2"
+            android:textSize="14sp"
+            android:textColor="@color/textColor" />
+
+
+        <Button
+            android:id="@+id/btnCancelRide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Ride"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/primaryColorDark" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

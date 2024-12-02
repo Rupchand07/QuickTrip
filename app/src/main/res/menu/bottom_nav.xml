@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/navigation_search"
+            android:icon="@drawable/search"
+            android:title="Search" />
+
+        <item
+            android:id="@+id/navigation_publish"
+            android:icon="@drawable/plus"
+            android:title="Publish" />
+
+        <item
+            android:id="@+id/navigation_your_rides"
+            android:icon="@drawable/rides"
+            android:title="Your Rides" />
+
+        <item
+            android:id="@+id/navigation_inbox"
+            android:icon="@drawable/mail"
+            android:title="Inbox" />
+
+        <item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+</menu>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/background_gradient">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_email_24"
+        android:contentDescription="Email Icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewCurrentEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Email:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonVerifyEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Verification Email"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColorDark"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextNewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonUpdateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Email"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColorDark"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewVerificationMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please check your email for verification."
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"/>
+
+</LinearLayout>

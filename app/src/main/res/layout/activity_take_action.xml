@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btnBackActionPage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back Button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        android:id="@+id/tvActionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBackActionPage"
+        android:text="Take Action"
+        android:textSize="20sp"
+        android:textColor="#333"
+        android:layout_marginTop="16dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvActionTitle"
+        android:layout_marginTop="16dp"
+        android:background="@color/secondaryTextColor" />
+
+    <LinearLayout
+        android:id="@+id/actionOptionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvActionTitle"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btnRespond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primaryColorDark"
+            android:text="Respond to Message"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnContactSupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primaryColorDark"
+            android:text="Contact Support"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

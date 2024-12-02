@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/crossBtn1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/baseline_cancel_24"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How do you want to sign\nup?"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_email_24"
+            android:id="@+id/email"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sign up with your email"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/arrowRightBtn1"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            android:layout_marginStart="100dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a member?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        android:id="@+id/logIn"
+        android:textStyle="bold"
+        android:textColor="#16325B"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By signing up, you agree to our Terms and Conditions and Privacy Policy. Your information is collected to create your account, manage bookings, improve services, and ensure the security of our platform. You can exercise your data rights through our Contact form. Learn more about how we handle your personal information in our Privacy Policy."
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

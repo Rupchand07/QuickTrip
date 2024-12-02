@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iconPickup"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/baseline_location_on_24"
+       />
+
+        <TextView
+            android:id="@+id/textViewPickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconPickup"
+            android:layout_marginStart="8dp"
+            android:text="Pickup:Chittoor"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iconDestination"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/textViewPickup"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/baseline_flag_24"
+        />
+
+        <TextView
+            android:id="@+id/textViewDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconDestination"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/textViewPickup"
+            android:text="Destination:Kadapa"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/textViewDestination"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/iconDate"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_date_range_24"
+           />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/iconPassengers"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_person_24"
+             />
+
+            <TextView
+                android:id="@+id/textViewPassengers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text=" "
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/errorColor"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/baseline_delete_24"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

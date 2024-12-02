@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpMail">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:id="@+id/backBtn1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What's your email?"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:layout_marginTop="40dp"
+        android:id="@+id/emailUp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/email"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Create Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:layout_marginTop="20dp"
+        android:id="@+id/createPass"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/email"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:layout_marginTop="20dp"
+        android:id="@+id/confirmPass"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/email"
+        />
+    <Button
+        android:id="@+id/signUpBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#16325B"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+
+</LinearLayout>

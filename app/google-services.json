@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "566837733428",
+    "project_id": "quick-trip-a04f2",
+    "storage_bucket": "quick-trip-a04f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566837733428:android:8e484b88142723c1ab4261",
+        "android_client_info": {
+          "package_name": "com.example.quicktrip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8qGOSNcGwicOowewTVQaXeCdK7URgrMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

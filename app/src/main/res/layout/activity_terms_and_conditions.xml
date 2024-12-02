@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="@color/primaryColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here you can add your actual Terms and Conditions text. You can have multiple sections, and it should cover key topics like user agreements, liability, data privacy, and other terms related to your carpooling app."
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You can also provide more information here, like user responsibilities, booking policies, cancellation policies, and more."
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"/>
+
+
+        <Button
+            android:id="@+id/buttonAcceptTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accept Terms"
+            android:backgroundTint="@color/primaryColorDark"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+</ScrollView>
